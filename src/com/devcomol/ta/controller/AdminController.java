@@ -23,6 +23,10 @@ import com.devcomol.ta.schedulejob.RSSNewsFeed;
 import com.devcomol.ta.service.TimeDataService;
 import com.devcomol.ta.service.UserService;
 
+/*
+ * Main Controller for the Admin Page
+ */
+
 @Controller
 public class AdminController {
 

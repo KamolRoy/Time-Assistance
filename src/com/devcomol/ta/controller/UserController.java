@@ -32,6 +32,10 @@ import com.devcomol.ta.schedulejob.RSSNewsFeed;
 import com.devcomol.ta.service.TimeDataService;
 import com.devcomol.ta.service.UserService;
 
+/*
+ * Main Controller for the User Home Page
+ */
+
 @Controller
 public class UserController {
 
