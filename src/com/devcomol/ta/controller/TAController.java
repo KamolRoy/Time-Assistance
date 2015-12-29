@@ -13,6 +13,10 @@ import com.devcomol.ta.dao.User;
 import com.devcomol.ta.schedulejob.NewsModel;
 import com.devcomol.ta.schedulejob.RSSNewsFeed;
 
+/*
+ * It is the home controller
+ */
+
 @Controller
 public class TAController {
 
