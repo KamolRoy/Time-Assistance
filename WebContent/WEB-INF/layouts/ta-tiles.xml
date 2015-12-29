@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="ta.base" template="/WEB-INF/templates/tadefault.jsp">
+		<put-attribute name="title" value="Time Assistance Default Template"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/templates/header.jsp"></put-attribute>
+		<put-attribute name="news" value="/WEB-INF/templates/news.jsp"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/templates/content.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="home" extends="ta.base">
+		<put-attribute name="title" value="Time Assistance"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/home-default.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminhome" extends="ta.base">
+		<put-attribute name="title" value="Time Assistance-Admin"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/home-admin.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userhome" extends="ta.base">
+		<put-attribute name="title" value="Time Assistance-User"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/home-user.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="login" extends="ta.base">
+		<put-attribute name="title" value="Login Page"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/login-staff/login.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="login2" extends="ta.base">
+		<put-attribute name="title" value="Login Page"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/login-staff/login2.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="dberror" extends="ta.base">
+		<put-attribute name="title" value="Database Error"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/database-error.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="denied" extends="ta.base">
+		<put-attribute name="title" value="Access Denied"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/login-staff/denied.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="loggedout" extends="ta.base">
+		<put-attribute name="title" value="Logged Out"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/login-staff/loggedout.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="eventcreated" extends="ta.base">
+		<put-attribute name="title" value="Event Created"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/eventcreated.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="updateinfo" extends="ta.base">
+		<put-attribute name="title" value="Update Information"></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/update-info.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="localnews" extends="ta.base">
+		<put-attribute name="title" value="Local News"></put-attribute>
+		<put-attribute name="news" value=""></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/local-news.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="aboutme" extends="ta.base">
+		<put-attribute name="title" value="Local News"></put-attribute>
+		<put-attribute name="news" value=""></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/about-me.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="help" extends="ta.base">
+		<put-attribute name="title" value="Local News"></put-attribute>
+		<put-attribute name="news" value=""></put-attribute>
+		<put-attribute name="tacontent" value="/WEB-INF/tiles/help.jsp"></put-attribute>
+	</definition>
+	
+	
+	
+</tiles-definitions>
+
+

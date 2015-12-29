@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+
+
+	<context:component-scan base-package="com.devcomol.ta.controller"></context:component-scan>
+
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<context:property-placeholder
+		location="classpath:com/devcomol/ta/prop/jdbc.properties" />
+
+	<bean id="messageSoruce"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename"
+			value="classpath:/com/devcomol/ta/prop/messages.properties">
+		</property>
+	</bean>
+
+	<bean id="tilesViewResolver"
+		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+	</bean>
+
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<value>/WEB-INF/layouts/ta-tiles.xml</value>
+		</property>
+	</bean>
+
+
+	<mvc:resources mapping="/gallery/**" location="/WEB-INF/resources/">
+	</mvc:resources>
+
+	<task:annotation-driven />
+
+	<bean id="rssNewsFeed" class="com.devcomol.ta.schedulejob.RSSNewsFeed">
+	</bean>
+
+	<!-- Mail Service -->
+
+	
+
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com"></property>
+		<property name="port" value="587"></property>
+		<property name="username" value="${mail.username}"></property>
+		<property name="password" value="${mail.password}"></property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.ssl.trust">smtp.gmail.com</prop>
+			</props>
+		</property>
+		<qualifier value="mailSender"></qualifier>
+	</bean>
+	
+	<bean id="mailHandler"
+		class="com.devcomol.ta.schedulejob.MailHandler">
+	<qualifier value="mailHandler"></qualifier>
+	</bean>
+<!-- 	<bean id="taMailService"
+		class="com.devcomol.ta.service.TAMailService">
+	<qualifier value="taMailService"></qualifier>
+	</bean> -->
+</beans>
