@@ -754,3 +754,11 @@ img {
 	color: #6c0c0c;
 	text-align: right;
 }
+
+.footer_area a{
+	color: #6c0c0c;
+}
+
+.footer_area a:hover {
+	text-decoration: underline;
+}

@@ -21,11 +21,11 @@
 					placeholder="Username" required /> <input type="password"
 					name="password" id="password" placeholder="Password" required />
 
-				<div class="remember">
+				<!-- <div class="remember">
 					<label><input type="checkbox" name="remember-me"
 						id="rememberme" checked="checked" /> Remember Me</label><br /> <a
 						href="#">Forgotten username or password?</a>
-				</div>
+				</div> -->
 
 
 				<input name="submit" type="submit" value="Submit" /> <input
@@ -84,9 +84,8 @@
 			<div id="da-slider" class="da-slider">
 				<div class="da-slide">
 					<h2>Java Desktop Application</h2>
-					<p>Get customized java desktop application as per your
-						condition for any operating system and database. Place you
-						requirement, I will develop the application for you.</p>
+					<p>Get customized java desktop application as per you
+						requirement.</p>
 					<a
 						href="${pageContext.request.contextPath }/aboutme?${_csrf.parameterName}=${_csrf.token}&aid=1"
 						class="da-link">Read more</a>
@@ -98,43 +97,37 @@
 				</div>
 				<div class="da-slide">
 					<h2>Java Web Application</h2>
-					<p>Need java based website? With spring 4 I can develop that
-						for you which including front-end design, back-end business logic,
-						database management, login system, AJAX and many more.</p>
+					<p>Need a Java based website? With spring framework I can develop that for you.</p>
 					<a
 						href="${pageContext.request.contextPath }/aboutme?${_csrf.parameterName}=${_csrf.token}&aid=2"
 						class="da-link">Read more</a>
 					<div class="da-img">
 						<img
-							src="${pageContext.request.contextPath }/gallery/images/3.png"
+							src="${pageContext.request.contextPath }/gallery/images/20.jpe"
 							alt="image01" />
 					</div>
 				</div>
 				<div class="da-slide">
 					<h2>HTML5, CSS and JavaScript</h2>
-					<p>If you are looking for a simple website, I am here with
-						creative web design skill by HTML5 and CSS and make website
-						dynamic with java-scripting.</p>
+					<p>Looking for a static front-end website? Get it done with HTML5, CSS3 and jQuery.</p>
 					<a
 						href="${pageContext.request.contextPath }/aboutme?${_csrf.parameterName}=${_csrf.token}&aid=3"
 						class="da-link">Read more</a>
 					<div class="da-img">
 						<img
-							src="${pageContext.request.contextPath }/gallery/images/1.png"
+							src="${pageContext.request.contextPath }/gallery/images/30.jpg"
 							alt="image01" />
 					</div>
 				</div>
 				<div class="da-slide">
 					<h2>Professional Development</h2>
-					<p>You can trust on my professionalism as single or team
-						player. I always focus meeting the customer requirements and
-						delivery on time.</p>
+					<p>You can trust on my professionalism as unsupervised or as a team player.</p>
 					<a
 						href="${pageContext.request.contextPath }/aboutme?${_csrf.parameterName}=${_csrf.token}&aid=4"
 						class="da-link">Read more</a>
 					<div class="da-img">
 						<img
-							src="${pageContext.request.contextPath }/gallery/images/4.png"
+							src="${pageContext.request.contextPath }/gallery/images/40.jpg"
 							alt="image01" />
 					</div>
 				</div>

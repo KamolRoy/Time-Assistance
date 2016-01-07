@@ -49,10 +49,10 @@
 							<label for="send-email">Send Email</label>
 
 						</div>
-						<div>
+						<!-- <div>
 							<input name="add_gcal" type="checkbox" id="gcal" /> <label
 								for="gcal">Add to Google Calendar</label>
-						</div>
+						</div> -->
 					</div>
 					<div>
 						<label></label> <input type="submit" name="action" value="Update"

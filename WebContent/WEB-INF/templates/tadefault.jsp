@@ -10,7 +10,8 @@
 <meta charset="UTF-8">
 <title>Time Assistance</title>
 
-<link rel="shortcut icon" href="${pageContext.request.contextPath }/gallery/images/spring.png">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath }/gallery/images/spring.png">
 <link type="text/css"
 	href="${pageContext.request.contextPath}/gallery/css/style.css"
 	rel="stylesheet" />
@@ -33,13 +34,7 @@
 	src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/gallery/js/jquery-ui-timepicker-addon.js"></script>
-	
-<%-- <script type="text/javascript"
-	src="${pageContext.request.contextPath}/gallery/js/jquery-ui-timepicker-addon-i18n.min.js"></script> --%>
-<%-- <script type="text/javascript"
-	src="${pageContext.request.contextPath}/gallery/js/jquery-ui-timepicker-addon-i18n.min.js"></script>
-<script type="text/javascript"
-	src="${pageContext.request.contextPath}/gallery/js/jquery-ui-sliderAccess.js"></script> --%>
+
 
 </head>
 

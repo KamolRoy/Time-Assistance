@@ -63,6 +63,7 @@ public class TAController {
 		List<NewsModel> localNews = rssNewsFeed.getNewsListFull();
 
 		model.addAttribute("localNews", localNews);
+		model.addAttribute("pageInfo", "unusual");
 
 		if (principal != null) {
 			String pageUser = null;
@@ -81,7 +82,8 @@ public class TAController {
 			pageUser = principal.getName();
 			model.addAttribute("pageUser", pageUser);
 		}
-
+		model.addAttribute("pageInfo", "unusual");
+		
 		return "aboutme";
 	}
 
@@ -93,7 +95,8 @@ public class TAController {
 			pageUser = principal.getName();
 			model.addAttribute("pageUser", pageUser);
 		}
-
+		model.addAttribute("pageInfo", "unusual");
+		
 		return "help";
 	}
 

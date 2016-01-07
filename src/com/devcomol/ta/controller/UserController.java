@@ -109,6 +109,17 @@ public class UserController {
 
 		String pageUser = principal.getName();
 		timeData.getUser().setUsername(pageUser);
+		
+		Date date1 = new Date();
+		Date date2 = timeData.getEvent_time();
+		
+		
+		if(date2.compareTo(date1)<0){
+			timeData.setActive_status(false);
+		}else{
+			timeData.setActive_status(true);
+		}
+		
 		timeData.setSaved_time(new Date());
 
 		try {

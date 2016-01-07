@@ -66,7 +66,6 @@ public class MailDAO {
 		MapSqlParameterSource params = new MapSqlParameterSource();
 		params.addValue("id", id);
 		jdbc.update("update timedata set mail_sent=true, active_status=false where id=:id", params);
-		System.out.println("updateMailSent call for id: " + id);
 	}
 
 	/*
